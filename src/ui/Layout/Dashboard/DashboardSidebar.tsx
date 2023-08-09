@@ -8,8 +8,13 @@ import { Fragment } from "react";
 import { Badge } from "../../Badge";
 import { SIDEBAR_LINKS, SideBarLinkProps } from "../../../utils/sidebar";
 import clsx from "clsx";
-
-export const SidebarLinkWithBadge = ({ name, link, Icon }: SideBarLinkProps) => {
+import Logo from "../../../assets/images/Logomark.svg";
+import sideImg from "../../../assets/images/sideImg.svg";
+export const SidebarLinkWithBadge = ({
+  name,
+  link,
+  Icon,
+}: SideBarLinkProps) => {
   return (
     <div>
       <a
@@ -20,7 +25,7 @@ export const SidebarLinkWithBadge = ({ name, link, Icon }: SideBarLinkProps) => 
           <Icon className="h-5 w-5 text-gray-500 group-hover:text-white" />
           <span className="text-gray-700 group-hover:text-white">{name}</span>
         </div>
-        <Badge size="xs" className="text-gray-700">
+        <Badge size="xs" className="text-gray-500">
           10
         </Badge>
       </a>
@@ -70,9 +75,10 @@ export const renderSidebarLinks = (sidebarLinks: SideBarLinkProps[]) => {
 export const DashboardSidebar = () => {
   return (
     <Fragment>
-      <div className="bg-white min-h-screen shadow absolute md:relative md:translate-x-0 transform -translate-x-full transition duration-200 ease-in-out w-64 flex-shrink-0 inset-y-0 left-0 pt-7 px-2">
+      <div className="bg-white min-h-screen shadow absolute md:relative md:translate-x-0 transform -translate-x-full transition duration-200 ease-in-out w-64 flex-shrink-0 inset-y-0 left-0 pt-7 px-2 ">
         <div className="flex items-center px-4 space-x-2">
-          <div className="p-4 bg-purple-600 rounded-md"></div>
+          {/* <div className="p-4 bg-purple-600 rounded-md"></div> */}
+          <img src={Logo} alt="" />
           <h2 className="text-xl font-semibold text-gray-700">Untitled UI</h2>
         </div>
         <div className="px-4 mt-5 mb-5">
@@ -105,7 +111,7 @@ export const DashboardSidebar = () => {
             Checkout the new dasgboard view. Pages now load faster
           </p>
           <img
-            src="https://img.freepik.com/free-photo/young-business-woman-working-her-desk-with-laptop_23-2149206572.jpg?w=2000"
+            src={sideImg}
             className="h-32 w-full my-4 rounded-md"
             alt="profile"
           />
