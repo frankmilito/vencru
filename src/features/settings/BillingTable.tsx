@@ -8,7 +8,6 @@ import { Badge, Button } from "../../ui";
 import { formatMoney } from "../../utils/money";
 import { Invoice, tableData } from "../../utils/tableData";
 
-
 const renderUsers = ({ users }: Pick<Invoice, "users">) => {
   if (users.length > 5) {
     let copyUsers = [...users];
@@ -54,9 +53,7 @@ const BillingTable = () => {
   return (
     <div className="mt-5 pb-10 space-y-4">
       <div className="flex flex-col justify-between items-start md:flex-row">
-        <h3 className="text-lg text-gray-700 font-semibold mb-2 md:mb-0">
-          Billing History
-        </h3>
+        <h3 className="text-lg text-gray-900  mb-2 md:mb-0">Billing History</h3>
         <Button IconBefore={CloudArrowDownIcon} variant="white" size="xs">
           Download all
         </Button>
@@ -81,14 +78,14 @@ const BillingTable = () => {
                 </th>
                 <th className="py-3 px-6 md:w-1/3 text-gray-500">
                   <div className="flex items-center space-x-1">
-                    <span>Invoice</span>
+                    <span className="font-normal">Invoice</span>
                     <ArrowSmallDownIcon className="h-4 w-4" />
                   </div>
                 </th>
-                <th className="py-3 px-6 text-gray-500">Amount</th>
-                <th className="py-3 px-6 text-gray-500">Date</th>
-                <th className="py-3 px-6 text-gray-500">Status</th>
-                <th className="py-3 px-6 text-gray-500 whitespace-nowrap pr-32">
+                <th className="py-3 px-6 text-gray-500 font-normal">Amount</th>
+                <th className="py-3 px-6 text-gray-500 font-normal">Date</th>
+                <th className="py-3 px-6 text-gray-500 font-normal">Status</th>
+                <th className="py-3 px-6 text-gray-500 font-normal whitespace-nowrap pr-32">
                   Users on plan
                 </th>
                 <th className="py-3 px-6"></th>
@@ -124,7 +121,12 @@ const BillingTable = () => {
                     </td>
                     <td className="py-4 px-6 whitespace-nowrap">{item.date}</td>
                     <td className="py-4 px-6">
-                      <Badge IconBefore={CheckIcon} variant="success" size="sm">
+                      <Badge
+                        IconBefore={CheckIcon}
+                        variant="success"
+                        size="sm"
+                        className="bg-[#dff7e9] p-0"
+                      >
                         {item.status}
                       </Badge>
                     </td>

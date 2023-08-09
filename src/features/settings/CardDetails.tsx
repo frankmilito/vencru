@@ -134,8 +134,8 @@ const CardDetails = () => {
                             <div className="">
                               <RadioGroup.Label
                                 as="p"
-                                className={`font-medium  ${
-                                  checked ? "text-purple-700" : "text-gray-800"
+                                className={`font-normal  ${
+                                  checked ? "text-purple-700" : "text-gray-700"
                                 }`}
                               >
                                 {card.name}
@@ -155,13 +155,13 @@ const CardDetails = () => {
                                   <span
                                     className={` ${
                                       checked
-                                        ? "text-purple-500 font-medium"
-                                        : "text-gray-500 font-medium"
+                                        ? "text-purple-500 "
+                                        : "text-gray-500 "
                                     }`}
                                   >
                                     Set as default
                                   </span>
-                                  <button className="text-purple-700 font-medium">
+                                  <button className="text-purple-700 ">
                                     Edit
                                   </button>
                                 </div>
@@ -173,7 +173,7 @@ const CardDetails = () => {
                               <CheckCircleIcon className="h-6 w-6 text-purple-700" />
                             </div>
                           ) : (
-                            <div className="h-5 w-5 border-2 rounded-full bg-white border-purple-600"></div>
+                            <div className="h-5 w-5 border-2 rounded-full bg-white border-gray-300"></div>
                           )}
                         </div>
                       </>
@@ -185,7 +185,7 @@ const CardDetails = () => {
           </div>
           <button className="flex items-center space-x-2 text-gray-500 mt-4">
             <PlusIcon className="h-5 w-5" />
-            <p className="font-medium">Add new payment method</p>
+            <p className="">Add new payment method</p>
           </button>
         </div>
       </div>

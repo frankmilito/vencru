@@ -22,9 +22,9 @@ export const DashboardLayout = ({ children }: LayoutProps) => {
     <div className="relative flex items-start ">
       <DashboardMobileSideBar isOpen={isOpen} closeSidebar={closeSidebar} />
       <DashboardSidebar />
-      <div className="w-full">
+      <div className="w-full ">
         <DashboardNavbar openSidebar={openSidebar} />
-        <div className="h-full">{children}</div>
+        <div className="h-screen  overflow-scroll">{children}</div>
       </div>
     </div>
   );

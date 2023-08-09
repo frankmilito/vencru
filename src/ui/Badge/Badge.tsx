@@ -70,7 +70,7 @@ export const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
             className={clsx("h-4 w-4 cursor-pointer", getIconColor(variant))}
           />
         )}
-        <span>{children}</span>
+        <span className="font-normal">{children}</span>
         {IconAfter && (
           <IconAfter
             className={clsx("h-4 w-4 cursor-pointer", getIconColor(variant))}

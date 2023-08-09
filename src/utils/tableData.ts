@@ -17,7 +17,7 @@ export const tableData: Data = [
     invoice: "Basic plan - Dec 2022",
     amount: 1000,
     date: "Dec 1, 2022",
-    status: "paid",
+    status: "Paid",
     users: [
       {
         imageUrl:
@@ -54,7 +54,7 @@ export const tableData: Data = [
     invoice: "Basic plan - Dec 2022",
     amount: 1000,
     date: "Nov 1, 2022",
-    status: "paid",
+    status: "Paid",
     users: [
       {
         imageUrl:
@@ -87,7 +87,7 @@ export const tableData: Data = [
     invoice: "Basic plan - Dec 2022",
     amount: 1000,
     date: "Oct 1, 2022",
-    status: "paid",
+    status: "Paid",
     users: [
       {
         imageUrl:
@@ -116,7 +116,7 @@ export const tableData: Data = [
     invoice: "Basic plan - Dec 2022",
     amount: 1000,
     date: "Sep 1, 2022",
-    status: "paid",
+    status: "Paid",
     users: [
       {
         imageUrl:
@@ -137,7 +137,7 @@ export const tableData: Data = [
     invoice: "Basic plan - Dec 2022",
     amount: 1000,
     date: "Aug 1, 2022",
-    status: "paid",
+    status: "Paid",
     users: [
       {
         imageUrl:
@@ -162,7 +162,7 @@ export const tableData: Data = [
     invoice: "Basic plan - Dec 2022",
     amount: 1000,
     date: "Jul 1, 2022",
-    status: "paid",
+    status: "Paid",
     users: [
       {
         imageUrl:
@@ -187,7 +187,7 @@ export const tableData: Data = [
     invoice: "Basic plan - Dec 2022",
     amount: 1000,
     date: "Jun 1, 2022",
-    status: "paid",
+    status: "Paid",
     users: [
       {
         imageUrl:

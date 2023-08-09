@@ -9,7 +9,7 @@ const Index = () => {
       <div className="px-4 md:px-6 overflow-hidden py-6">
         <div>
           <h2 className="mb-1 text-3xl text-gray-700 ">Settings</h2>
-          <p className="text-gray-500">
+          <p className="text-gray-500 font-light">
             Manage your team and preferences here.
           </p>
         </div>
