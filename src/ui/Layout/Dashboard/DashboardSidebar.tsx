@@ -23,7 +23,9 @@ export const SidebarLinkWithBadge = ({
       >
         <div className="flex items-center space-x-3">
           <Icon className="h-5 w-5 text-gray-500 group-hover:text-white" />
-          <span className="text-gray-700 group-hover:text-white">{name}</span>
+          <span className="text-gray-700 group-hover:text-white text-[14px] ">
+            {name}
+          </span>
         </div>
         <Badge size="xs" className="text-gray-500">
           10
@@ -44,7 +46,9 @@ export const SidebarLink = ({ link, name, Icon, active }: SideBarLinkProps) => {
         )}
       >
         <Icon className="h-5 w-5 text-gray-500 group-hover:text-white" />
-        <span className="text-gray-700 group-hover:text-white">{name}</span>
+        <span className="text-gray-700 group-hover:text-white text-[14px]">
+          {name}
+        </span>
       </a>
     </div>
   );
@@ -75,7 +79,7 @@ export const renderSidebarLinks = (sidebarLinks: SideBarLinkProps[]) => {
 export const DashboardSidebar = () => {
   return (
     <Fragment>
-      <div className="bg-white min-h-screen shadow absolute md:relative md:translate-x-0 transform -translate-x-full transition duration-200 ease-in-out w-64 flex-shrink-0 inset-y-0 left-0 pt-7 px-2 ">
+      <div className="bg-white min-h-screen shadow absolute md:relative md:translate-x-0 transform -translate-x-full transition duration-200 ease-in-out w-64 flex-shrink-0 inset-y-0 left-0 pt-7 px-4 ">
         <div className="flex items-center px-4 space-x-2">
           {/* <div className="p-4 bg-purple-600 rounded-md"></div> */}
           <img src={Logo} alt="" />
@@ -104,10 +108,10 @@ export const DashboardSidebar = () => {
         </nav>
 
         <div className="bg-gray-50 mx-2 rounded-md px-3 py-3 mt-4 mb-7">
-          <h4 className="font-semibold text-gray-700">
+          <h4 className="font-semibold text-gray-700 text-[14px]">
             New features available!
           </h4>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-[12px]">
             Checkout the new dasgboard view. Pages now load faster
           </p>
           <img
