@@ -11,19 +11,15 @@ const CardDetails = () => {
   return (
     <div className="">
       <div className="py-5 border-b border-gray-200">
-        <h3 className="mb-1 text-xl text-gray-700 font-semibold">
-          Payment Method
-        </h3>
-        <p className="text-sm text-gray-700">
+        <h3 className="mb-1 text-xl text-gray-700 ">Payment Method</h3>
+        <p className="text-sm text-gray-500">
           Update your billing details and address.
         </p>
       </div>
       <div className="py-4 border-b md:flex">
         <div className="hidden md:block border-gray-200 mb-4 md:w-1/3">
-          <h4 className="-mb-1 text-base text-gray-700 font-semibold">
-            Contact email
-          </h4>
-          <p className="text-sm text-gray-700">
+          <h4 className="mb-1 text-base text-gray-700 ">Contact email</h4>
+          <p className="text-sm text-gray-500 ">
             where should invoices be sent?
           </p>
         </div>
@@ -64,7 +60,7 @@ const CardDetails = () => {
               type="radio"
               name="cards"
               value="new"
-              className="h-4 w-4 border-gray-200 focus:ring-2 mt-1 focus:ring-purple-700 text-purple-700"
+              className="h-4 w-4 border-gray-200 focus:ring-2 mt-1 focus:ring-purple-500 text-purple-700"
               aria-labelledby="card-option-2"
               aria-describedby="card-option-2"
             />
@@ -94,10 +90,8 @@ const CardDetails = () => {
 
       <div className="py-4 border-b md:flex">
         <div className="hidden md:block border-gray-200 mb-4 md:w-1/3">
-          <h4 className="-mb-1 text-base text-gray-700 font-semibold">
-            Card Details
-          </h4>
-          <p className="text-sm text-gray-700">Select default payment method</p>
+          <h4 className="mb-1 text-base text-gray-700 ">Card Details</h4>
+          <p className="text-sm text-gray-500">Select default payment method</p>
         </div>
         <div className="md:w-2/3">
           <div className="md:hidden border-gray-200 mb-4">
