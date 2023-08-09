@@ -20,11 +20,24 @@ const sizes = {
   md: "px-3 py-1 text-md",
 };
 
-const getIconColor = (variant) => {
+type SVGComponent = (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+
+type BadgeProps = React.HTMLAttributes<HTMLDivElement> & {
+  variant?: keyof typeof variants;
+  size?: keyof typeof sizes;
+  withCloseIcon?: boolean;
+  isLoading?: boolean;
+  handleClose?: React.MouseEventHandler<SVGElement>;
+  onClick?: React.MouseEventHandler<HTMLDivElement>;
+  IconAfter?: SVGComponent;
+  IconBefore?: SVGComponent;
+};
+
+const getIconColor = (variant: keyof typeof IconVariants) => {
   return IconVariants[variant];
 };
 
-export const Badge = React.forwardRef(
+export const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
   (
     {
       children,

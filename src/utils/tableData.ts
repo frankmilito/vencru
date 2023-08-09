@@ -1,4 +1,17 @@
-export const tableData = [
+export type Invoice = {
+  id: number;
+  invoice: string;
+  amount: number;
+  date: string;
+  status: string;
+  users: {
+    imageUrl: string;
+  }[];
+};
+
+type Data = Invoice[];
+
+export const tableData: Data = [
   {
     id: 1,
     invoice: "Basic plan - Dec 2022",

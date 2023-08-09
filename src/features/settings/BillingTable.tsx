@@ -6,9 +6,10 @@ import {
 import { Badge, Button } from "../../ui";
 
 import { formatMoney } from "../../utils/money";
-import { tableData } from "../../utils/tableData";
+import { Invoice, tableData } from "../../utils/tableData";
 
-const renderUsers = ({ users }) => {
+
+const renderUsers = ({ users }: Pick<Invoice, "users">) => {
   if (users.length > 5) {
     let copyUsers = [...users];
     let visibleUsers = copyUsers.slice(0, 5);
@@ -96,10 +97,7 @@ const BillingTable = () => {
             <tbody>
               {tableData.map((item) => {
                 return (
-                  <tr
-                    className="bg-white border-b hover:bg-gray-50"
-                    key={item.id}
-                  >
+                  <tr className="bg-white border-b hover:bg-gray-50">
                     <td className="p-4 w-4">
                       <div className="flex items-center">
                         <input

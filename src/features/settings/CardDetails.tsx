@@ -128,7 +128,7 @@ const CardDetails = () => {
                     relative flex cursor-pointer rounded-lg px-5 py-4 shadow focus:outline-none`
                     }
                   >
-                    {({ checked }) => (
+                    {({ active, checked }) => (
                       <>
                         <div className="flex w-full items-start justify-between">
                           <div className="flex items-start space-x-3">

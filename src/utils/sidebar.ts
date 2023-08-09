@@ -6,7 +6,17 @@ import {
   FlagIcon,
 } from "@heroicons/react/24/outline";
 
-export const SIDEBAR_LINKS = [
+export type SideBarLinkProps = {
+  link: string;
+  name: string;
+  Icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+  badge?: {
+    text: string | number;
+  };
+  active?: boolean;
+};
+
+export const SIDEBAR_LINKS: SideBarLinkProps[] = [
   {
     link: "/",
     name: "Home",

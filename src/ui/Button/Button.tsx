@@ -21,14 +21,24 @@ const sizes = {
   icon: "",
 };
 
-const getIconColor = (variant) => {
+type SVGComponent = (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: keyof typeof variants;
+  size?: keyof typeof sizes;
+  isLoading?: boolean;
+  IconAfter?: SVGComponent;
+  IconBefore?: SVGComponent;
+};
+
+const getIconColor = (variant: string) => {
   if (variant === "default" || variant === "outline") {
     return "text-gray-500";
   }
   return "text-gray-700";
 };
 
-export const Button = React.forwardRef(
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       children,
