@@ -10,6 +10,8 @@ import { SIDEBAR_LINKS, SideBarLinkProps } from "../../../utils/sidebar";
 import clsx from "clsx";
 import Logo from "../../../assets/images/Logomark.svg";
 import sideImg from "../../../assets/images/sideImg.svg";
+import icon from "../../../assets/images/Icon.svg";
+import avatar from "../../../assets/images/avatar.svg";
 export const SidebarLinkWithBadge = ({
   name,
   link,
@@ -128,16 +130,14 @@ export const DashboardSidebar = () => {
         </div>
 
         <div className="mx-2 border-t py-4 flex space-x-3 items-center">
-          <img
-            src="https://media.istockphoto.com/photos/positivity-puts-you-in-a-position-of-power-picture-id1299077582?b=1&k=20&m=1299077582&s=170667a&w=0&h=Esjqlg_WCWmTc83Dv6PLhwPFwYN9uXoclBn0cUhtS5I="
-            className="h-9 w-9 rounded-full "
-            alt="profile"
-          />
+          <img src={avatar} className="h-9 w-9 rounded-full " alt="profile" />
           <div>
-            <p className="text-sm text-gray-800 font-medium">Olivia Rhye</p>
-            <p className="text-sm text-gray-600">olivia@untitledui.com</p>
+            <p className="text-sm text-gray-800 ">Olivia Rhye</p>
+            <p className="text-sm text-gray-500 text-[14px] font-light">
+              olivia@untitledui.com
+            </p>
           </div>
-          <ArrowRightOnRectangleIcon className="h-5 w-5 text-gray-700" />
+          <img src={icon} alt="" />
         </div>
       </div>
     </Fragment>

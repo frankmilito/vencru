@@ -29,8 +29,8 @@ type BadgeProps = React.HTMLAttributes<HTMLDivElement> & {
   isLoading?: boolean;
   handleClose?: React.MouseEventHandler<SVGElement>;
   onClick?: React.MouseEventHandler<HTMLDivElement>;
-  IconAfter?: SVGComponent;
-  IconBefore?: SVGComponent;
+  IconAfter?: any;
+  IconBefore?: any;
 };
 
 const getIconColor = (variant: keyof typeof IconVariants) => {

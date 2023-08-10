@@ -26,7 +26,7 @@ const renderUsers = ({ users }: Pick<Invoice, "users">) => {
             </>
           );
         })}
-        <div className="h-8 w-8 text-gray-600 text-base bg-gray-200 border-2 border-white flex justify-center items-center font-medium rounded-full">
+        <div className="h-8 w-8 text-gray-500 text-base bg-gray-200 border-2 border-white flex justify-center items-center  rounded-full">
           +{users.length - visibleUsers.length}
         </div>
       </div>
@@ -125,7 +125,7 @@ const BillingTable = () => {
                         IconBefore={CheckIcon}
                         variant="success"
                         size="sm"
-                        className="bg-[#dff7e9] p-0"
+                        className="bg-[#e0f9e8] "
                       >
                         {item.status}
                       </Badge>

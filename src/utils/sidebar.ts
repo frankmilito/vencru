@@ -9,7 +9,7 @@ import {
 export type SideBarLinkProps = {
   link: string;
   name: string;
-  Icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+  Icon: any;
   badge?: {
     text: string | number;
   };

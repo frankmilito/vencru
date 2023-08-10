@@ -1,4 +1,4 @@
-import Settings from "./features/settings";
+import Settings from "./components/settings";
 
 function App() {
   return (

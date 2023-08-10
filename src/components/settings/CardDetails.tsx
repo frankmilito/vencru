@@ -2,7 +2,6 @@ import { PlusIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { RadioGroup } from "@headlessui/react";
-
 import { CARD_ICONS, cardData } from "../../utils/cardData";
 
 const CardDetails = () => {
@@ -103,6 +102,7 @@ const CardDetails = () => {
             </p>
           </div>
           <div className="w-full">
+            <div className="flex items-center"></div>
             <RadioGroup value={selected} onChange={setSelected}>
               <RadioGroup.Label className="sr-only">
                 Card Details

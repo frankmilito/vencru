@@ -27,8 +27,8 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: keyof typeof variants;
   size?: keyof typeof sizes;
   isLoading?: boolean;
-  IconAfter?: SVGComponent;
-  IconBefore?: SVGComponent;
+  IconAfter?: any;
+  IconBefore?: any;
 };
 
 const getIconColor = (variant: string) => {
